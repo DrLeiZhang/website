@@ -1,10 +1,11 @@
 # Jekyll configuration
 name: Lei Zhang
 description:
-
+<div>
+<p>Lei Zhang, Ph.D, Postdoc, IEEE Member</p> 
 <p>2013-2015, Hong Kong Scholar, Department of Computing in HKPU</p> 
 <p>2015-, Distinguished Researcher, College of Communication Engineering, Chongqing University</p>
-
+</div>
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://www.leizhang.tk
