@@ -1,0 +1,65 @@
+% This is an implementation of the NDA and KNDA algorithm for classification
+%
+% Please refer to the following paper
+% Lei Zhang and Feng-Chun Tian,"A new kernel discriminant analysis framework for electronic nose recognition", Analytica Chimica Acta,816(2014)8-17.
+
+% Input:
+%      (1)X1; % Data of class 1
+%          Ts:Nx1 (training label in source domain);Xs:Nxd(training matrix in source domain)
+%      (2)X2; % Data of class 2
+%          Tt:Ntx1(training label in target domain);Xt:Ntxd(training matrix in target domain)
+
+% Output:
+%      (1)MissClassificationRate_Training: number of wrong classification of training data
+%      (2)MissClassificationRate_Testing: number of wrong classification of testing data
+
+% please contact us via the following email:
+% email:leizhang@cqu.edu.cn
+
+function [W,centers]=NDA(X1,X2)
+% X1,X2 为mxN (N为样本数)
+% 计算X1数据集中，每个样本的k1个紧邻样本
+dim1=size(X1,1);
+dim2=size(X2,1);
+N1=size(X1,2);
+N2=size(X2,2);
+m1=mean(X1,2);
+m2=mean(X2,2);
+m=mean([X1,X2],2);
+% calculate sb
+SB=zeros(dim1,dim2);
+for i=1:N1
+    for j=1:N2
+        temp=X1(:,i)-X2(:,j);
+        SB=SB+temp*temp'*exp(-norm(temp)^2/10);
+    end
+end
+% SB=N1*(m1-m)*(m1-m)'+N2*(m2-m)*(m2-m)';
+% SB=SB/(N1*N2);
+% calculate sw
+% sw1
+SW1=zeros(dim1,dim2);
+  for i=1:N1
+      for j=1:N1
+          temp1=X1(:,i)-X1(:,j);
+          SW1=SW1+temp1*temp1'*exp(-1*norm(temp1)^2/10);
+      end
+  end
+SW2=zeros(dim1,dim2);
+  for i=1:N2
+      for j=1:N2
+          temp2=X2(:,i)-X2(:,j);
+          SW2=SW2+temp2*temp2'*exp(-1*norm(temp2)^2/10);
+      end
+  end
+  SW=SW1/N1^2+SW2/N2^2;
+% SW=SW1+SW2;
+%   DeltS=SB-SW;
+DeltS=inv(SW)*SB;
+[eigvector,eigvalue]=eig(DeltS);
+[d,index] = sort(diag(eigvalue),'descend');
+W=eigvector(:,index(1));
+centers=[m1'*W m2'*W]';
+end
+
+  
