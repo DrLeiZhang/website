@@ -1,9 +1,10 @@
 # Jekyll configuration
-name: Lei Zhang
+name: Lei Zhang,Ph.D, Postdoc, Distinguished Researcher, IEEE Member
 
+description: 
 <img class="about-avatar" src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
-description: <h1>Welcome to my homepage</h1><p style="color:green;">----Knowing unknown is happiness</p>
+<h1>Welcome to my homepage</h1><p style="color:green;">----Knowing unknown is happiness</p>
 
 
 # url is currently only used only for the RSS feed in feed.xml
