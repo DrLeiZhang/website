@@ -1,15 +1,15 @@
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
-            <p class="copyright">&copy;{{ site.time | date: '%Y' }} {{ site.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
-            under
-            <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
-        </div>
+<footer>
+    <div class="about-wrap">
+        <section class="about">
+            <img class="about-avatar" src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+            <div class="about-body">
+                <p class="about-body-title">About</p>
+                <p class="about-body-description">{{ site.description }}</p>
+                <ul>
+                    <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="about-body-link"><img src="{{ "/img/icon-twitter.png" | prepend: site.baseurl }}" border="0" alt="Twitter" /> @{{ site.twitter_username }}</a></li>
+                    <li><a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" class="about-body-link"><img src="{{ "/img/icon-instagram.png" | prepend: site.baseurl }}" border="0" alt="Instagram" /> {{ site.instagram_username }}</a></li>
+                </ul>
+            </div>
+        </section>
     </div>
-</div>
-
-{% include disqus-counts.html %}
-{% include analytics.html %}
-
-</body>
-</html>
+</footer>
