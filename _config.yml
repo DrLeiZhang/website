@@ -1,5 +1,5 @@
 # Jekyll configuration
-name: Lei Zhang,Ph.D, Postdoc, Distinguished Researcher, IEEE Member
+name: Lei Zhang
 
 <img class="about-avatar" src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
