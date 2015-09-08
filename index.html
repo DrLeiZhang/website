@@ -1,40 +1,37 @@
 ---
 layout: default
 ---
+<div class="well">
+<p><a href="http://www.leizhang.tk/">{Home}  </a><a href="http://www.leizhang.tk/publications.html">{Publications}  </a> <a href="http://www.leizhang.tk/research.html">{Research}  </a> <a href="http://www.leizhang.tk/professional%20activities.html">{Professional Activities}</a> <a href="http://www.leizhang.tk/people.html">{People}</a></p>
+</div>
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  {% include post.html post=post content=post.content %}
-{% endfor %}
+<div class="well">
+<h1>Research Interests</h1>
+<p>Machine Learning , Machine Olfaction , Electronic Nose , Artificial Intelligent , Signal Processing </p>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pagination">
-  <li class="pagination-item">
-    <a class="pagination-link pagination-link--non-numeric" {% if paginator.page == 1 %}disabled="disabled"{% endif %} href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">&larr; First page</a>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-link pagination-link--non-numeric" {% if paginator.previous_page == nil %}disabled="disabled"{% endif %} href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Prev</a>
-  </li>
+<h1>Research Direction </h1>
+<B  style="color:green;">Machine Learning:</B>
+<p>Transfer learning, multi-view/modal learning, subspace learning, discriminative learning, metric learning</p>
+<B  style="color:green;">Machine Olfaction:</B>
+<p>Multi-sensor system, information fusion, electronic noses, sensor arrays</p>
+<B  style="color:green;">Applications:</B>
+<p>Computer vision-objection recognition/image classification/face recognition, classification/recognition/regression, IAQ detection/monitoring, prediction/estimation, bioinformatics</p>
+</div>
 
-  <!-- Numbers -->
-  {% for page in (1..paginator.total_pages) %}
-    <li class="pagination-item">
-      {% if page == paginator.page %}
-        <a class="pagination-link pagination-link--selected" href="#">{{ page }}</a>
-      {% elsif page == 1 %}
-        <a class="pagination-link" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a class="pagination-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    </li>
-  {% endfor %}
-  <!-- End of numbers -->
+<div class="well">
+<p><B style="color:red;">[news]</B> Our paper "<B>Lei Zhang</B> and David Zhang, Visual Understanding via Multi-Feature Shared Learning with Global Consistency" is conditionally accepted for publication in <I><B>IEEE Transactions on Multimedia (TMM)</B></I>, 2015.<I style="color:red;">[paper and code coming soon]</I> </p>
 
-  <li class="pagination-item">
-    <a class="pagination-link pagination-link--non-numeric" {% if paginator.next_page == nil %}disabled="disabled"{% endif %} href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &rarr;</a>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-link pagination-link--non-numeric" {% if paginator.page == paginator.total_pages %}disabled="disabled"{% endif %} href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}">Last page &rarr;</a>
-  </li>
-</ul>
-{% endif %}
+<p> <B style="color:red;">[news]</B> Our paper "<B>Lei Zhang</B> and David Zhang, Domain Adaptation Extreme Learning Machines for Drift Compensation in E-nose Systems" has been published in <I><B>IEEE Transactions on Instrumentation and Measurement (TIM)</B></I>, vol. 64, no. 7, pp. 1790-1801, July 2015." <a href="resources/DAELM.pdf"> [paper]</a>,<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6963383&filter%3DAND%28p_IS_Number%3A7118796%29">[website]</a> </p>
+
+<p><B style="color:red;">[news]</B> Our paper "Xiongwei Peng, <B>Lei Zhang*</B>, Fengchun Tian, and David Zhang, A novel sensor feature extraction based on kernel entropy component analysis for discrimination of indoor air contaminants" is accepted for publication in <I><B>Sensors and Actuators A</B></I>, 2015. </p>
+
+<p> <B style="color:red;">[news]</B> Our paper "<B>Lei Zhang</B>, Xiongwei Peng, Fengchun Tian, David Zhang,Time series estimation of gas sensor baseline drift using ARMA and Kalman based models" is accepted for publication in <I><B>Sensor Review</B></I>, 2015.</p>
+
+<p> <B style="color:red;">[news]</B> Our paper "<B>Lei Zhang</B>, David Zhang, Fengchun Tian,SVM and ELM: Who Wins? Object Recognition with Deep Convolutional  Features from ImageNet" is accepted for presentation in <I><B>The 6th Int'Conf ELM</B></I>, 2015.</p>
+
+<p> <B style="color:red;">[news]</B> Our paper "Yinghui Huang, <B>Lei Zhang</B>, Guan Lian, Rixing Zhan, Rufu Xu, Yan Huang, Biswade Mitra, Jun Wu, Gaoxing Luo, A novel mathematical model to predict prognosis of burnt patients based on logistic regression and support vector machine" is accepted for publication in <I><B>Burns</B></I>, 2015.</p>
+
+<p> <B style="color:red;">[news]</B> I have received the <B>Excellent Doctoral Dissertation Award</B> of Chongqing, China, 2015.</p>
+
+<a href="http://www.leizhang.tk/publications.html">Full publications link</a>
+</div>
