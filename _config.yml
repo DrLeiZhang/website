@@ -1,8 +1,7 @@
 # Jekyll configuration
 name: Lei Zhang
 
-description: 
-<h1>Welcome to my homepage</h1><p style="color:green;">----Knowing unknown is happiness</p>
+description: <h1>Welcome to my homepage</h1><p style="color:green;">----Knowing unknown is happiness</p>
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://www.leizhang.tk
