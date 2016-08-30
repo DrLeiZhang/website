@@ -4,7 +4,7 @@ The code file is served for the paper "Online Learners' Reading Ability Detectio
 
 In this file, three subfiles are included. 
 
-74m42data.txt: the data file for checking the algorithm;
+74m42data.txt: the data file for checking the algorithm (by contacting the authors);
 
 mtl.m: the introduced MTJL algorithm in the paper for exploring the online learners' reading ability in the paper.
 
