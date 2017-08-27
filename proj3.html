@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<img class="about-avatar" src="{{ "/img/object.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<div class="well">
+<p><a href="http://www.leizhang.tk/">{Home}</a> <a href="http://www.leizhang.tk/publications%20and%20codes.html">{Publications and Codes}</a> <a href="http://www.leizhang.tk/research.html">{Research}</a> <a href="http://www.leizhang.tk/projects.html"><B>{Projects}</B></a> <a href="http://www.leizhang.tk/professional%20activities.html">{Professional Activities}</a> <a href="http://www.leizhang.tk/people.html">{People}</a></p>
+</div>
+
+<div class="well">
+<h2>Machine Vision, Image Recognition and Machine Learning</h2>
+
+<h1>[Proj-3: Coarse-to-Fine Deep Transfer Adaptation for Kinship]</a></h1>
+<p><B>Paper:</B> </p>
+<p>Qingyan Duan, Lei Zhang*, and Wangmeng Zuo, From Face Recognition to Kinship Verification: An Adaptation Approach, IEEE Int'Conf. Computer Vision (<B>ICCV</B>), in AMFG Workshop, 2017. <a href="resources/ICCVW_CFT.pdf">[paper]</a></p>
+
+<p><B>Abstract:</B></p>
+<p>Kinship verification in the wild is a challenging yet interesting
+issue, which aims to determine whether two unconstrained
+facial images are from the same family or not.
+Most previous methods for kinship verification can be divided
+as low-level hand-crafted features based shallow methods
+and kin data only trained convolutional neural network
+(CNN) based deep methods. Worthy of affirmation, numerous
+work in vision get that convolutional features are discriminative,
+but bigger data dependent. A fact is that for
+a variety of data-limited vision problems, such as limited
+Kinship datasets, the ability of CNNs is seriously dropped
+because of overfitting. To this end, by inheriting the success
+of deep mining algorithms on face verification (e.g. LFW),
+in this paper, we propose a Coarse-to-Fine Transfer (CFT)
+based deep kinship verification framework. As the idea implied,
+this paper tries to answer “is it possible to transfer a
+face recognition net to kinship verification?”. Therefore, a
+supervised coarse pre-training and domain-specific ad hoc
+fine re-training paradigm is exploited, with which the kinrelation
+specific features are effectively captured from faces.
+Extensive experiments on benchmark datasets demonstrate
+that our proposed CFT adaptation approach is comparable
+to the state-of-the art methods with a large margin.   </p>
+<img class="about-avatar" src="{{ "/img/proj3_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Approach:</B></p>
+<p>Illustration of our proposed Coarse-to-Fine Transfer for Deep Adaptation (CFT)</p>
+<img class="about-avatar" src="{{ "/img/proj3_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p>Intuitive illustration of NRML proposed by Lu Jiwen et al. (a) High-dimensional
+feature space. The data points in blue and red denote parents and
+children, respectively. The data points with kinship relation are
+denoted as circles. The data points in the neighborhood and nonneighborhood
+are denoted as triangles and squares, respectively.
+(b) The new NRML subspace, where a kinship margin is obtained.</p>
+<img class="about-avatar" src="{{ "/img/proj3_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Experiments:</B></p>
+<p>In experiments, two kinds of databases are considered:
+large-scale CASIA WebFace data (500K) and small-scale
+KinFace data (4K). The KinFace data include four publicly
+available datasets, such as KinFaceW-I, KinFaceW-II,
+Cornell KinFace and UB KinFace.</p>
+<img class="about-avatar" src="{{ "/img/proj3_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>Convergence curve of coarse-to-fine transfer</p>
+<img class="about-avatar" src="{{ "/img/proj3_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+</div>
+
+
+
