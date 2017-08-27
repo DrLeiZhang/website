@@ -50,37 +50,34 @@ of the proposed approach. </p>
 <img class="about-avatar" src="{{ "/img/proj6_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
 <p><B>Approach:</B></p>
-<p>The data distribution and decision boundaries. (a) linear classifiers
-learned for a three-class problem on labeled data in source domain.
-(b) classifiers learned on the source domain do not fit the target domain
-due to the change of data distribution. (c) domain adaptation with EDA by
-simultaneously learning new classifier and category transformation matrix.
-Note that the category transformation denotes the output adaptation with a
-matrix Theta.</p>
-<img class="about-avatar" src="{{ "/img/proj5_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-<p>The flowchart of the proposed cross-domain learning framework in multiple views. Specifically, for each domain, the same type of feature is first
-extracted. Second, the base classifier is trained on the raw feature of source data. Third, the feature mapping (random projection) is conducted on the both
-features of source and target data. Fourth, the EDA based domain adaptation classifier is learned. Finally, the visual categorization task with domain adaptation
-is done.</p>
-<img class="about-avatar" src="{{ "/img/proj5_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>Overview of the proposed framework. In the left part (the training phase), the proposed algorithm exploits a multi-feature shared learning over potential
+visual features of the training images. In the right part (the testing phase), a joint decision function with the learned classifier
+parameters and is computed based on the extracted visual features from the testing image. </p>
+<img class="about-avatar" src="{{ "/img/proj6_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
 <p><B>Experiments:</B></p>
-<p>we evaluate our proposed methods EDA
-and MvEDA on four datasets: 1) the challenging YouTube &
-Consumer videos (SIFT and ST features), 2) the 3DA
-Office dataset (SURF feature), 3) the 4DA Extended office
-dataset (SURF vs. CNN features), 4) the Bing-Caltech dataset
-(Classeme feature). Notably, EDA is termed for single feature
-scenarios and MvEDA is termed for multiple features based
-application scenarios (e.g., YouTube videos).</p>
-<img class="about-avatar" src="{{ "/img/proj5_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-<img class="about-avatar" src="{{ "/img/proj5_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>Experiments are conducted on the Oxford
+Flowers 17 dataset, the Caltech 101 dataset, the YouTube
+& Consumer Videos dataset and the large-scale NUS-WIDE
+dataset for multimedia understanding. Additionally, we have
+also conducted an extensive experiment on the convolutional
+neural net (CNN) based deep features for object recognition.</p>
+<img class="about-avatar" src="{{ "/img/proj6_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj6_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
-<p>Convergence of EDA for three datasets: (a, d) Consumer & YouTube
-Videos; (b, e) 3DA Office dataset: webcam→dslr; (c, f) 4DA Extended Office
-dataset: amazon→dslr.</p>
-<img class="about-avatar" src="{{ "/img/proj5_6.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-
+<p><B>References:</B></p>
+<p>[1] S. Wang et al., “Semi-supervised multiple feature analysis for action
+recognition,” IEEE Trans. Multimedia, vol. 16, no. 2, pp. 289–298,
+Feb. 2014.</p>
+<p>[2] Y. Yang, Z. Ma, A. G. Hauptmann, and N. Sebe, “Feature selection
+for multimedia analysis by sharing information among multiple tasks,”
+IEEE Trans. Multimedia, vol. 15, no. 3, pp. 661–669, Apr. 2013.</p>
+<p>[3] F. Nie, H. Huang, X. Cai, and C. Ding, “Efficient and robust feature
+selection via joint l2,1-norms minimization,” in Proc. NIPS, 2010, pp.
+1813–1821.</p>
+<p>[4] T. Xia, T. Mei, and Y. Zhang, “Multiview spectral embedding,” IEEE
+Trans. Syst., Man, Cybern. B, Cybern., vol. 40, no. 6, pp. 1438–1446,
+Dec. 2010.</p>
 </div>
 
 
