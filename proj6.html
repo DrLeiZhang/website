@@ -10,35 +10,44 @@ layout: default
 <div class="well">
 <h2>Machine Vision, Image Recognition and Machine Learning</h2>
 
-<h1>[Visual Knowledge Transfer and Adaptation]</a></h1>
+<h1>[Multi-view Learning for Image Understanding]</a></h1>
 <p><B>Paper:</B> </p>
-<p>Lei Zhang* and David Zhang, Robust Visual Knowledge Transfer via Extreme Learning Machine-Based Domain Adaptation, IEEE Transactions on Image Processing (<B>T-IP</B>), vol. 25, no. 10, pp. 4959-4973, 2016. <a href="resources/EDA-TIP.pdf">[paper]</a></p>
+<p>Lei Zhang* and David Zhang, Visual Understanding via Multi-Feature Shared Learning With Global Consistency, IEEE Transactions on Multimedia (<B>T-MM</B>), vol. 18, no. 2, pp. 247-259, 2016. <a href="resources/TMM-2015.pdf">[paper]</a></p>
 
 <p><B>Abstract:</B></p>
-<p>We address the problem of visual knowledge adaptation
-by leveraging labeled patterns from source domain and a
-very limited number of labeled instances in target domain to learn
-a robust classifier for visual categorization. This paper proposes
-a new extreme learning machine (ELM)-based cross-domain
-network learning framework, that is called ELM-based Domain
-Adaptation (EDA). It allows us to learn a category transformation
-and an ELM classifier with random projection by minimizing the
-L2,1-norm of the network output weights and the learning error
-simultaneously. The unlabeled target data, as useful knowledge, is
-also integrated as a fidelity term to guarantee the stability during
-cross-domain learning. It minimizes the matching error between
-the learned classifier and a base classifier, such that many existing
-classifiers can be readily incorporated as the base classifiers. The
-network output weights cannot only be analytically determined,
-but also transferrable. In addition, a manifold regularization with
-Laplacian graph is incorporated, such that it is beneficial to
-semisupervised learning. Extensively, we also propose a model of
-multiple views, referred as MvEDA. Experiments on benchmark
-visual datasets for video event recognition and object recognition
-demonstrate that our EDA methods outperform the existing
-cross-domain learning methods.   </p>
+<p>Image/video data is usually represented with
+multiple visual features. Fusion of multi-source information for
+establishing attributes has been widely recognized.
+Multi-feature visual recognition has recently received much
+attention in multimedia applications. This paper studies visual
+understanding via a newly proposed -norm-based multi-feature
+shared learning framework, which can simultaneously learn
+a global label matrix and multiple sub-classifiers with the
+labeled multi-feature data. Additionally, a group graph manifold
+regularizer composed of the Laplacian and Hessian graph
+is proposed. It can better preserve the manifold structure of
+each feature, such that the label prediction power is much
+improved through semi-supervised learning with global
+label consistency. For convenience, we call the proposed
+approach global-label-consistent classifier (GLCC). The
+merits of the proposed method include the following: 1) the
+manifold structure information of each feature is exploited
+in learning, resulting in a more faithful classification owing
+to the global label consistency; 2) a group graph manifold
+regularizer based on the Laplacian and Hessian regularization is
+constructed; and 3) an efficient alternative optimization method
+is introduced as a fast solver owing its speed to convex
+sub-problems. Experiments on several benchmark visual
+datasets—the 17-category Oxford Flower dataset, the challenging
+101-category Caltech dataset, the YouTube and Consumer
+Videos dataset, and the large-scale NUS-WIDE dataset—have
+been used for multimedia understanding. The results
+demonstrate that the proposed approach compares favorably with
+state-of-the-art algorithms. An extensive experiment using the
+deep convolutional activation features also shows the effectiveness
+of the proposed approach. </p>
 
-<img class="about-avatar" src="{{ "/img/proj5_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj6_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
 <p><B>Approach:</B></p>
 <p>The data distribution and decision boundaries. (a) linear classifiers
