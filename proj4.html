@@ -10,57 +10,50 @@ layout: default
 <div class="well">
 <h2>Machine Vision, Image Recognition and Machine Learning</h2>
 
-<h1>[Proj-4: Sparse Subspace Reconstruction Transfer Learning for Image Recognition]</a></h1>
+<h1>[Proj-4: Sparse Reconstruction Transfer for Heterogeneous Image Recognition]</a></h1>
 <p><B>Paper:</B> </p>
-<p>Qingyan Duan, Lei Zhang*, and Wangmeng Zuo, From Face Recognition to Kinship Verification: An Adaptation Approach, IEEE Int'Conf. Computer Vision (<B>ICCV</B>), in AMFG Workshop, 2017. <a href="resources/ICCVW_CFT.pdf">[paper]</a></p>
+<p>Lei Zhang*, Wangmeng Zuo, and David Zhang, LSDT: Latent Sparse Domain Transfer Learning for Visual Adaptation, IEEE Transactions on Image Processing (<B>T-IP</B>), vol. 25, no. 3, pp. 1177-1191, 2016. <a href="resources/LSDT.pdf">[paper]</a></p>
 
 <p><B>Abstract:</B></p>
-<p>Kinship verification in the wild is a challenging yet interesting
-issue, which aims to determine whether two unconstrained
-facial images are from the same family or not.
-Most previous methods for kinship verification can be divided
-as low-level hand-crafted features based shallow methods
-and kin data only trained convolutional neural network
-(CNN) based deep methods. Worthy of affirmation, numerous
-work in vision get that convolutional features are discriminative,
-but bigger data dependent. A fact is that for
-a variety of data-limited vision problems, such as limited
-Kinship datasets, the ability of CNNs is seriously dropped
-because of overfitting. To this end, by inheriting the success
-of deep mining algorithms on face verification (e.g. LFW),
-in this paper, we propose a Coarse-to-Fine Transfer (CFT)
-based deep kinship verification framework. As the idea implied,
-this paper tries to answer “is it possible to transfer a
-face recognition net to kinship verification?”. Therefore, a
-supervised coarse pre-training and domain-specific ad hoc
-fine re-training paradigm is exploited, with which the kinrelation
-specific features are effectively captured from faces.
-Extensive experiments on benchmark datasets demonstrate
-that our proposed CFT adaptation approach is comparable
-to the state-of-the art methods with a large margin.   </p>
-<img class="about-avatar" src="{{ "/img/proj3_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>We propose a novel reconstruction-based transfer
+learning method called latent sparse domain transfer (LSDT)
+for domain adaptation and visual categorization of heterogeneous
+data. For handling cross-domain distribution mismatch,
+we advocate reconstructing the target domain data with the
+combined source and target domain data points based on
+L1-norm sparse coding. Furthermore, we propose a joint learning
+model for simultaneous optimization of the sparse coding and
+the optimal subspace representation. In addition, we generalize
+the proposed LSDT model into a kernel-based linear/nonlinear
+basis transformation learning framework for tackling nonlinear
+subspace shifts in reproduced kernel Hilbert space. The
+proposed methods have three advantages: 1) the latent space
+and the reconstruction are jointly learned for pursuit of an
+optimal subspace transfer; 2) with the theory of sparse subspace
+clustering, a few valuable source and target data points are
+formulated to reconstruct the target data with noise (outliers)
+from source domain removed during domain adaptation, such
+that the robustness is guaranteed; and 3) a nonlinear projection
+of some latent space with kernel is easily generalized for dealing
+with highly nonlinear domain shift (e.g., face poses). Extensive
+experiments on several benchmark vision data sets demonstrate
+that the proposed approaches outperform other state-of-the-art
+representation-based domain adaptation methods.   </p>
+<img class="about-avatar" src="{{ "/img/proj4_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
 <p><B>Approach:</B></p>
-<p>Illustration of our proposed Coarse-to-Fine Transfer for Deep Adaptation (CFT)</p>
-<img class="about-avatar" src="{{ "/img/proj3_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-
-<p>Intuitive illustration of NRML proposed by Lu Jiwen et al. (a) High-dimensional
-feature space. The data points in blue and red denote parents and
-children, respectively. The data points with kinship relation are
-denoted as circles. The data points in the neighborhood and nonneighborhood
-are denoted as triangles and squares, respectively.
-(b) The new NRML subspace, where a kinship margin is obtained.</p>
-<img class="about-avatar" src="{{ "/img/proj3_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>Flowchart of the training and testing phase of the proposed LSDT method for visual categorization.</p>
+<img class="about-avatar" src="{{ "/img/proj4_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
 <p><B>Experiments:</B></p>
-<p>In experiments, two kinds of databases are considered:
-large-scale CASIA WebFace data (500K) and small-scale
-KinFace data (4K). The KinFace data include four publicly
-available datasets, such as KinFaceW-I, KinFaceW-II,
-Cornell KinFace and UB KinFace.</p>
-<img class="about-avatar" src="{{ "/img/proj3_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-<p>Convergence curve of coarse-to-fine transfer</p>
-<img class="about-avatar" src="{{ "/img/proj3_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>The 3D illustration of synthetic data (left) and 2D illustration after
+subspace alignment (right).</p>
+<img class="about-avatar" src="{{ "/img/proj4_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>Recognition Accuracy</p>
+<img class="about-avatar" src="{{ "/img/proj4_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj4_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>Visualization</p>
+<img class="about-avatar" src="{{ "/img/proj4_6.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 </div>
 
 
