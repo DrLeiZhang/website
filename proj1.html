@@ -13,6 +13,7 @@ layout: default
 <h1>[Proj-1: AdvNet for Deep Kinship Recognition]</a></h1>
 <p><B>Paper:</B> </p>
 <p>Qingyan Duan and Lei Zhang*, AdvNet: Adversarial Contrastive Residual Net for 1 Million Kinship Recognition, ACM Int'Conf. Multimedia (<B>ACM MM</B>), in AMFG Workshop Challenge, Ranking Top 3rd, 2017. <a href="resources/ACMMM_AdvNet.pdf">[paper]</a></p>
+
 <p><B>Abstract:</B></p>
 <p>Kinship verification in the wild is an interesting and challenging problem. The goal of kinship verification is to determine whether a pair of faces are blood relatives or not. Most
 previous methods for kinship verification can be divided as hand-crafted features based shallow learning methods and convolutional neural network (CNN) based deep learning methods. Nevertheless, these methods are still posed with
@@ -22,6 +23,7 @@ based adversarial loss (AL), pairwise contrastive loss (CL) and family ID based 
 kin-feature augmentation. Finally, Euclidean distance metric is used for kinship recognition. Extensive experiments on the 1st Large-Scale Kinship Recognition Data Challenge (Families in the wild) show the effectiveness of our proposed
 AdvNet and ensemble based feature augmentation.   </p>
 <img class="about-avatar" src="{{ "/img/proj1_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
 <p><B>Approach:</B></p>
 <p>Overview of the proposed multiple deep nets based ensemble method for kinship verification. Three
 AdvNets with different loss and architecture, and one VGG-Face model are fused for feature augmentation.
@@ -29,6 +31,7 @@ Euclidean distance is used for face verification.</p>
 <img class="about-avatar" src="{{ "/img/proj1_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 <p>The Family ID based AdvNet with multiple losses residual architecture</p>
 <img class="about-avatar" src="{{ "/img/proj1_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
 <p><B>Experiments:</B></p>
 <p>Recognition accuracy of different model, loss and feature augmentation, and the ROC curves of different models on 7 types of kin-relation.</p>
 <img class="about-avatar" src="{{ "/img/proj1_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
