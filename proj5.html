@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<img class="about-avatar" src="{{ "/img/object.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<div class="well">
+<p><a href="http://www.leizhang.tk/">{Home}</a> <a href="http://www.leizhang.tk/publications%20and%20codes.html">{Publications and Codes}</a> <a href="http://www.leizhang.tk/research.html">{Research}</a> <a href="http://www.leizhang.tk/projects.html"><B>{Projects}</B></a> <a href="http://www.leizhang.tk/professional%20activities.html">{Professional Activities}</a> <a href="http://www.leizhang.tk/people.html">{People}</a></p>
+</div>
+
+<div class="well">
+<h2>Machine Vision, Image Recognition and Machine Learning</h2>
+
+<h1>[Proj-5: Visual Knowledge Transfer and Adaptation]</a></h1>
+<p><B>Paper:</B> </p>
+<p>Lei Zhang* and David Zhang, Robust Visual Knowledge Transfer via Extreme Learning Machine-Based Domain Adaptation, IEEE Transactions on Image Processing (<B>T-IP</B>), vol. 25, no. 10, pp. 4959-4973, 2016. <a href="resources/EDA-TIP.pdf">[paper]</a></p>
+
+<p><B>Abstract:</B></p>
+<p>We address the problem of visual knowledge adaptation
+by leveraging labeled patterns from source domain and a
+very limited number of labeled instances in target domain to learn
+a robust classifier for visual categorization. This paper proposes
+a new extreme learning machine (ELM)-based cross-domain
+network learning framework, that is called ELM-based Domain
+Adaptation (EDA). It allows us to learn a category transformation
+and an ELM classifier with random projection by minimizing the
+L2,1-norm of the network output weights and the learning error
+simultaneously. The unlabeled target data, as useful knowledge, is
+also integrated as a fidelity term to guarantee the stability during
+cross-domain learning. It minimizes the matching error between
+the learned classifier and a base classifier, such that many existing
+classifiers can be readily incorporated as the base classifiers. The
+network output weights cannot only be analytically determined,
+but also transferrable. In addition, a manifold regularization with
+Laplacian graph is incorporated, such that it is beneficial to
+semisupervised learning. Extensively, we also propose a model of
+multiple views, referred as MvEDA. Experiments on benchmark
+visual datasets for video event recognition and object recognition
+demonstrate that our EDA methods outperform the existing
+cross-domain learning methods.   </p>
+
+<img class="about-avatar" src="{{ "/img/proj5_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Approach:</B></p>
+<p>The data distribution and decision boundaries. (a) linear classifiers
+learned for a three-class problem on labeled data in source domain.
+(b) classifiers learned on the source domain do not fit the target domain
+due to the change of data distribution. (c) domain adaptation with EDA by
+simultaneously learning new classifier and category transformation matrix.
+Note that the category transformation denotes the output adaptation with a
+matrix Theta.</p>
+<img class="about-avatar" src="{{ "/img/proj5_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>The flowchart of the proposed cross-domain learning framework in multiple views. Specifically, for each domain, the same type of feature is first
+extracted. Second, the base classifier is trained on the raw feature of source data. Third, the feature mapping (random projection) is conducted on the both
+features of source and target data. Fourth, the EDA based domain adaptation classifier is learned. Finally, the visual categorization task with domain adaptation
+is done.</p>
+<img class="about-avatar" src="{{ "/img/proj5_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Experiments:</B></p>
+<p>we evaluate our proposed methods EDA
+and MvEDA on four datasets: 1) the challenging YouTube &
+Consumer videos (SIFT and ST features), 2) the 3DA
+Office dataset (SURF feature), 3) the 4DA Extended office
+dataset (SURF vs. CNN features), 4) the Bing-Caltech dataset
+(Classeme feature). Notably, EDA is termed for single feature
+scenarios and MvEDA is termed for multiple features based
+application scenarios (e.g., YouTube videos).</p>
+<img class="about-avatar" src="{{ "/img/proj5_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj5_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p>Convergence of EDA for three datasets: (a, d) Consumer & YouTube
+Videos; (b, e) 3DA Office dataset: webcam→dslr; (c, f) 4DA Extended Office
+dataset: amazon→dslr.</p>
+<img class="about-avatar" src="{{ "/img/proj5_6.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+</div>
+
+
+
