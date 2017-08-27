@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<img class="about-avatar" src="{{ "/img/object.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<div class="well">
+<p><a href="http://www.leizhang.tk/">{Home}</a> <a href="http://www.leizhang.tk/publications%20and%20codes.html">{Publications and Codes}</a> <a href="http://www.leizhang.tk/research.html">{Research}</a> <a href="http://www.leizhang.tk/projects.html"><B>{Projects}</B></a> <a href="http://www.leizhang.tk/professional%20activities.html">{Professional Activities}</a> <a href="http://www.leizhang.tk/people.html">{People}</a></p>
+</div>
+
+<div class="well">
+<h2>Machine Olfaction and Pattern Recognition</h2>
+
+<h1>[Odor Recognition Across Multiple E-Nose Systems]</a></h1>
+<p><B>Paper:</B> </p>
+<p>Lei Zhang*, Yan Liu, and Pingling Deng, Odor Recognition in Multiple E-Nose Systems With Cross-Domain Discriminative Subspace Learning, IEEE Transactions on Instrumentation and Measurement, vol. 66, no. 7, pp. 1679-1692, 2017. <a href="resources/CDSL_paper.pdf">[paper]</a></p>
+
+<p><B>Abstract:</B></p>
+<p>In this paper, we propose an odor recognition
+framework for multiple electronic noses (E-noses), machine
+olfaction odor perception systems. Straight to the point, the
+proposed transferring odor recognition model is called crossdomain
+discriminative subspace learning (CDSL). General odor
+recognition problems with E-nose are single domain oriented,
+that is, recognition algorithms are often modeled and tested
+on the same one domain data set (i.e., from only one
+E-nose system). Different from that, we focus on a more realistic
+scenario: the recognition model is trained on a prepared source
+domain data set from a master E-nose system A, but tested on
+another target domain data set from a slave system B or C
+with the same type of the master system A. The internal
+device parameter variance between master and slave systems
+often results in data distribution discrepancy between source
+domain and target domain, such that single-domain-based odor
+recognition model may not be adapted to another domain.
+Therefore, we propose domain-adaptation-based odor recognition
+for addressing the realistic recognition scenario across systems.
+Specifically, the proposed CDSL method consists of three merits:
+1) an intraclass scatter minimization- and an interclass scatter
+maximization-based discriminative subspace learning is solved on
+source domain; 2) a data fidelity and preservation constraint of
+the subspace is imposed on target domain without distortion; and
+3) a minipatch feature weighted domain distance is minimized for
+closely connecting the source and target domains. Experiments
+and comparisons on odor recognition tasks in multiple E-noses
+demonstrate the efficiency of the proposed method.</p>
+<img class="about-avatar" src="{{ "/img/proj12_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Approach:</B></p>
+<p>Schematic of the proposed CDSL method; after a subspace projection
+P, the source domain and target domain of different space distributions lie
+in a latent subspace with good distribution consistency (the centers of both
+domains become very close, and drift is removed); in this latent subspace,
+the classification of two classes is successfully achieved. Formally, the top
+coordinate system denotes the raw data points of source domain and target
+domain in 3-D. We use the word “center” to represent the mean of the features.
+From the top figure, we can see that the difference between the mean of source
+domain and the mean of target domain is large in each dimension.</p>
+<img class="about-avatar" src="{{ "/img/proj12_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Data:</B></p>
+<img class="about-avatar" src="{{ "/img/proj12_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Experiments:</B></p>
+<img class="about-avatar" src="{{ "/img/proj12_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj12_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj12_6.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>References:</B></p>
+<p>[1] A. Vergara, S. Vembu, T. Ayhan, M. A. Ryan, M. L. Homer, and
+R. Huerta, “Chemical gas sensor drift compensation using classifier
+ensembles,” Sens. Actuators B, Chem., vols. 166–167, pp. 320–329,
+May 2012.</p>
+<p>[2] R. Gopalan, R. Li, and R. Chellappa, “Domain adaptation for
+object recognition: An unsupervised approach,” in Proc. ICCV, 2011,
+pp. 999–1006.</p>
+<p>[3] B. Gong, Y. Shi, F. Sha, and K. Grauman, “Geodesic flow kernel for
+unsupervised domain adaptation,” in Proc. CVPR, 2012, pp. 2066–2073.</p>
+<p>[4] K. Yan and D. Zhang, “Correcting instrumental variation and timevarying
+drift: A transfer learning approach with autoencoders,” IEEE
+Trans. Instrum. Meas., vol. 65, no. 9, pp. 2012–2022, Sep. 2016.</p>
+
+</div>
+
+
+
