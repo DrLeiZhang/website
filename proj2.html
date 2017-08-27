@@ -12,16 +12,34 @@ layout: default
 
 <h1>[Proj-1: CRTL fro Cross-domain Image Recognition]</a></h1>
 <p><B>Paper:</B> </p>
-<p>Qingyan Duan, Lei Zhang*, and Wangmeng Zuo, AdvNet: Adversarial Contrastive Residual Net for 1 Million Kinship Recognition, ACM Int'Conf. Multimedia (<B>ACM MM</B>), in AMFG Workshop Challenge, Ranking Top 3rd, 2017. <a href="resources/ACMMM_AdvNet.pdf">[paper]</a></p>
+<p>Shanshan Wang, Lei Zhang*, and Wangmeng Zuo, Class-specific Reconstruction Transfer Learning via Sparse Low-rank Constraint, IEEE Int'Conf. Computer Vision (<B>ICCV</B>), in CEFRL Workshop, Oral presentation, 2017. <a href="resources/ICCVW_CRTL.pdf">[paper]</a></p>
 
 <p><B>Abstract:</B></p>
-<p>Kinship verification in the wild is an interesting and challenging problem. The goal of kinship verification is to determine whether a pair of faces are blood relatives or not. Most
-previous methods for kinship verification can be divided as hand-crafted features based shallow learning methods and convolutional neural network (CNN) based deep learning methods. Nevertheless, these methods are still posed with
-the challenging task of recognizing kinship cues from facial images. Part of the reason for this may be that, the family information
-and the distribution difference of pairwise kin-face data based kinship verification issue are rarely considered. Inspired by maximum mean discrepancy (MMD) and generative adversarial net (GAN), family ID based Adversarial contrastive residual Network (AdvNet) is proposed for largescale (1 Million) kinship recognition in this paper. The MMD
-based adversarial loss (AL), pairwise contrastive loss (CL) and family ID based softmax loss (SL) are jointly formulated in the proposed AdvNet for kin-relation enhancement and discovery. Further, the deep nets ensemble is used for deep
-kin-feature augmentation. Finally, Euclidean distance metric is used for kinship recognition. Extensive experiments on the 1st Large-Scale Kinship Recognition Data Challenge (Families in the wild) show the effectiveness of our proposed
-AdvNet and ensemble based feature augmentation.   </p>
+<p>Subspace learning and reconstruction have been widely
+explored in recent transfer learning work and generally
+a specially designed projection and reconstruction transfer
+matrix are wanted. However, existing subspace reconstruction
+based algorithms neglect the class prior such that
+the learned transfer function is biased, especially when data
+scarcity of some class is encountered. Different from
+those previous methods, in this paper, we propose a novel
+reconstruction-based transfer learning method called
+Class-specific Reconstruction Transfer Learning (CRTL),
+which optimizes a well-designed transfer loss function without
+class bias. Using a class-specific reconstruction matrix
+to align the source domain with the target domain
+which provides help for classification with class prior modeling.
+Furthermore, to keep the intrinsic relationship between
+data and labels after feature augmentation, a projected
+Hilbert-Schmidt Independence Criterion (pHSIC), that
+measures the dependency between two sets, is first proposed
+by mapping the data from original space to RKHS in transfer
+learning. In addition, combining low-rank and sparse
+constraints on the class-specific reconstruction coefficient
+matrix, the global and local data structures can be effectively
+preserved. Extensive experiments demonstrate that the
+proposed method outperforms conventional representationbased
+domain adaptation methods.   </p>
 <img class="about-avatar" src="{{ "/img/proj1_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
 <p><B>Approach:</B></p>
