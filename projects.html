@@ -10,31 +10,8 @@ layout: default
 <div class="well">
 <h2>Machine Vision, Image Recognition and Machine Learning</h2>
 
-<h1><a href="http://www.leizhang.tk/proj1.html">[Proj-1: AdvNet for Deep Kinship Recognition]</a></h1>
-<p><B>Paper:</B> </p>
-<p>Qingyan Duan and Lei Zhang*, AdvNet: Adversarial Contrastive Residual Net for 1 Million Kinship Recognition, ACM Int'Conf. Multimedia (ACM MM), 2017. <a href="resources/ACMMM_AdvNet.pdf">[paper]</a></p>
-<p><B>Abstract:</B></p>
-<p>Kinship verification in the wild is an interesting and challenging problem. The goal of kinship verification is to determine whether a pair of faces are blood relatives or not. Most
-previous methods for kinship verification can be divided as hand-crafted features based shallow learning methods and convolutional neural network (CNN) based deep learning methods. Nevertheless, these methods are still posed with
-the challenging task of recognizing kinship cues from facial images. Part of the reason for this may be that, the family information
-and the distribution difference of pairwise kin-face data based kinship verification issue are rarely considered. Inspired by maximum mean discrepancy (MMD) and generative adversarial net (GAN), family ID based Adversarial contrastive residual Network (AdvNet) is proposed for largescale (1 Million) kinship recognition in this paper. The MMD
-based adversarial loss (AL), pairwise contrastive loss (CL) and family ID based softmax loss (SL) are jointly formulated in the proposed AdvNet for kin-relation enhancement and discovery. Further, the deep nets ensemble is used for deep
-kin-feature augmentation. Finally, Euclidean distance metric is used for kinship recognition. Extensive experiments on the 1st Large-Scale Kinship Recognition Data Challenge (Families in the wild) show the effectiveness of our proposed
-AdvNet and ensemble based feature augmentation.   </p>
+<h1><a href="http://www.leizhang.tk/proj1.html">[Proj-1: AdvNet for Deep Kinship Recognition in ACM MM 2017]</a></h1>
 <img class="about-avatar" src="{{ "/img/proj1_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-<p><B>Approach:</B></p>
-<p>Overview of the proposed multiple deep nets based ensemble method for kinship verification. Three
-AdvNets with different loss and architecture, and one VGG-Face model are fused for feature augmentation.
-Euclidean distance is used for face verification.</p>
-<img class="about-avatar" src="{{ "/img/proj1_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-<p>The Family ID based AdvNet with multiple losses residual architecture</p>
-<img class="about-avatar" src="{{ "/img/proj1_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-<p><B>Experiments:</B></p>
-<p>Recognition accuracy of different model, loss and feature augmentation, and the ROC curves of different models on 7 types of kin-relation.</p>
-<img class="about-avatar" src="{{ "/img/proj1_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
-<p>L2-distances of kinship pairs on 7 types of kin-relation. The points in red and blue denote the kinship
-pairs and non-kinship pairs, respectively. The black line denote the searched threshold for verification.</p>
-<img class="about-avatar" src="{{ "/img/proj1_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
 
 <h1>[Proj-2: CRTL fro Cross-domain Image Recognition]</h1>
 <p><B>Paper:</B> </p>
