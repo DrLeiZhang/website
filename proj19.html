@@ -1,0 +1,83 @@
+---
+layout: default
+---
+<img class="about-avatar" src="{{ "/img/object.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<div class="well">
+<p><a href="http://www.leizhang.tk/">{Home}</a> <a href="http://www.leizhang.tk/publications%20and%20codes.html">{Publications and Codes}</a> <a href="http://www.leizhang.tk/research.html">{Research}</a> <a href="http://www.leizhang.tk/projects.html"><B>{Projects}</B></a> <a href="http://www.leizhang.tk/professional%20activities.html">{Professional Activities}</a> <a href="http://www.leizhang.tk/people.html">{People}</a></p>
+</div>
+
+<div class="well">
+<h2>Machine Olfaction, Signal Processing and Pattern Recognition</h2>
+
+<h1>[Abnormal Odor Detection]</a></h1>
+<p><B>Paper:</B> </p>
+<p> Lei Zhang* and Pingling Deng, Abnormal Odor Detection in Electronic Nose
+via Self-Expression Inspired Extreme Learning Machine, IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2017, doi: 10.1109/TSMC.2017.2691909. <a href="resources/SE2LM_SEM.pdf">[paper]</a></p>
+
+<p><B>Abstract:</B></p>
+<p>The electronic nose (E-nose), as a metal oxide
+semiconductor gas sensor system coupled with pattern recognition
+algorithms, is developed for approximating artificial olfaction
+functions. Ideal gas sensors should be with selectivity, reliability,
+and cross-sensitivity to different odors. However, a new problem
+is that abnormal odors (e.g., perfume, alcohol, etc.) would show
+strong sensor response, such that they deteriorate the usual usage
+of E-nose for target odor analysis. An intuitive idea is to recognize
+abnormal odors and remove them online. A known truth is
+that the kinds of abnormal odors are countless in real-world scenarios.
+Therefore, general pattern classification algorithms lose
+effect because it is expensive and unrealistic to obtain all kinds
+of abnormal odors data. In this paper, we propose two simple
+yet effective methods for abnormal odor (outlier) detection:
+1) a self-expression model (SEM) with l1/l2-norm regularizer is
+proposed, which is trained on target odor data for coding and
+then a very few abnormal odor data is used as prior knowledge
+for threshold learning and 2) inspired by self-expression mechanism,
+an extreme learning machine (ELM) based self-expression
+(SE2LM) is proposed, which inherits the advantages of ELM
+in solving a single hidden layer feed-forward neural network.
+Experiments on several datasets by an E-nose system fabricated
+in our laboratory prove that the proposed SEM and SE2LM
+methods are significantly effective for real-time abnormal odor
+detection.</p>
+
+<img class="about-avatar" src="{{ "/img/proj19_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>The proposed SEM and SE2LM Framework:</B></p>
+<img class="about-avatar" src="{{ "/img/proj19_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p>Network structure of SE2LM. The difference between this structure
+and ELM lies in that the number of input nodes is associated with the
+dimensionality. In SE2LM, it serves for representing each sample by using hidden
+layer output and the analytically determined output weights α. It implies
+that the ELM space represents the dictionary space. Note that an interesting
+aspect is that in ELM, the number of input nodes and output nodes can be the
+dimension D, which would become a transformation problem. If N is set, it
+is expression problem focused in this paper. Also, in the proposed structure,
+each node is composed of D subnodes (i.e., shadow nodes).</p>
+<img class="about-avatar" src="{{ "/img/proj19_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Experimental Results</B></p>
+<img class="about-avatar" src="{{ "/img/proj19_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj19_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj19_6.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj19_7.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj19_8.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p><B>References:</B></p>
+<p>[1] L. Zhang and D. Zhang, “Efficient solutions for discreteness, drift,
+and disturbance (3D) in electronic olfaction,” IEEE Trans. Syst., Man,
+Cybern., Syst., to be published, doi: 10.1109/TSMC.2016.2597800</p>
+<p>[2] L. Zhang and D. Zhang, “Robust visual knowledge transfer
+via extreme learning machine-based domain adaptation,” IEEE
+Trans. Image Process., vol. 25, no. 10, pp. 4959–4973, Oct. 2016,
+doi: 10.1109/TIP.2016.2598679</p>
+<p>[3] L. Zhang et al., “A novel background interferences elimination method
+in electronic nose using pattern recognition,” Sensors Actuators A Phys.,
+vol. 201, pp. 254–263, Oct. 2013.</p>
+<p>[4] F. Tian, Z. Liang, L. Zhang, Y. Liu, and Z. Zhao, “A novel pattern
+mismatch based interference elimination technique in E-nose,” Sensors
+Actuators B Chem., vol. 234, pp. 703–712, Oct. 2016.</p>
+</div>
+
+
+
