@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<img class="about-avatar" src="{{ "/img/object.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<div class="well">
+<p><a href="http://www.leizhang.tk/">{Home}</a> <a href="http://www.leizhang.tk/publications%20and%20codes.html">{Publications and Codes}</a> <a href="http://www.leizhang.tk/research.html">{Research}</a> <a href="http://www.leizhang.tk/projects.html"><B>{Projects}</B></a> <a href="http://www.leizhang.tk/professional%20activities.html">{Professional Activities}</a> <a href="http://www.leizhang.tk/people.html">{People}</a></p>
+</div>
+
+<div class="well">
+<h2>Machine Olfaction, Signal Processing and Pattern Recognition</h2>
+
+<h1>[Subspace Projection for Heterogeneous Olfaction]</a></h1>
+<p><B>Paper:</B> </p>
+<p> Lei Zhang*, Yan Liu, Zhenwei He, Ji Liu, Pingling Deng and Xichuan Zhou, Anti-drift in E-nose: A Subspace Projection Approach with Drift Reduction, Sensors and Actuators B: Chemical, vol. 253, pp. 407-417, 2017. <a href="resources/DRCA-SNB.pdf">[paper]</a></p>
+
+<p><B>Abstract:</B></p>
+<p>Anti-drift is an emergent and challenging issue in sensor-related subjects. In this paper, we propose toaddress the time-varying drift (e.g. electronic nose drift), which is sometimes an ill-posed problem dueto its uncertainty and unpredictability. Considering that drift is with different probability distributionfrom the regular data, a machine learning based subspace projection approach is proposed. The mainidea behind is that given two data clusters with different probability distribution, we tend to find alatent projection P (i.e. a group of basis), such that the newly projected subspace of the two clusters iswith similar distribution. In other words, drift is automatically removed or reduced by projecting thedata onto a new common subspace. The merits are threefold: 1) the proposed subspace projection isunsupervised; without using any data label information; 2) a simple but effective domain distance isproposed to represent the mean distribution discrepancy metric; 3) the proposed anti-drift method canbe easily solved by Eigen decomposition; and anti-drift is manifested with a well solved projection matrixin real application. Experiments on synthetic data and real datasets demonstrate the effectiveness andefficiency of the proposed anti-drift method in comparison to state-of-the-art methods.</p>
+
+<p>Schematic diagram of the proposed DRCA method; after a subspace projection
+P, the source domain and target domain of different space distribution lie in
+a latent subspace with good distribution consistency (the centers of both domains
+become very close and drift is removed); in this latent subspace, the classification
+of two classes is successfully achieved.</p>
+<img class="about-avatar" src="{{ "/img/proj18_1.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p><B>E-nose system architecture</B></p>
+<img class="about-avatar" src="{{ "/img/proj18_2.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>The proposed DRCA Approach:</B></p>
+<img class="about-avatar" src="{{ "/img/proj18_3.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+
+<p><B>Experimental Results</B></p>
+<img class="about-avatar" src="{{ "/img/proj18_4.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj18_5.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj18_6.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<img class="about-avatar" src="{{ "/img/proj18_6.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+<p><B>References:</B></p>
+<p>[1] L. Zhang, F. Tian, S. Liu, L. Dang, X. Peng, X. Yin, Chaotic time series predictionof e-nose sensor drift in embedded phase space, Sens. Actuators, B 182 (2013)71–79.</p>
+<p>[2] F. Hossein-Babaei, V. Ghafarinia, Compensation for the drift-like terms causedby environmental fluctuations in the response of chemoresistive gas sensors,Sens. Actuators, B 143 (2010) 641–648.</p>
+<p>[3] S. Yan, D. Xu, B. Zhang, H. Zhang, Q. Yang, S. Lin, Graph embedding andextensions: a general framework for dimensionality reduction, IEEE Trans.Pattern Anal. Mach. Intell. 29 (1) (2007) 40–51.</p>
+<p>[4] A. Vergara, S. Vembu, T. Ayhan, M.A. Ryan, M.L. Homer, R. Huerta, Chemicalgas sensor drift compensation using classifier ensembles, Sens. Actuators, B:Chem. 167 (2012) 320–329.</p>
+</div>
+
+
+
