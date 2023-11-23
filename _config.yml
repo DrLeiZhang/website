@@ -1,7 +1,7 @@
 # Jekyll configuration
 name: Lei Zhang (张磊)
 
-description: <h1>Welcome to LiVE (Learning Intelligence & Vision Essential) Group</h1><p style="color:green;">----Imagination is more important than knowledge---Albert Einstein</p>
+description: <h1>Welcome to LiVE (Learning Intelligence & Vision Essential) Group</h1><p style="color:green;"><B>Imagination is more important than knowledge---Albert Einstein</B></p>
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://www.leizhang.tk
